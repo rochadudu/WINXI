@@ -1,0 +1,19 @@
+
+
+function addToCart(itemName, itemPrice, itemImage) {
+    const cartItemsContainer = document.getElementById('cart-items');
+
+    // Criar um novo item para adicionar ao carrinho
+    const newItem = document.createElement('div');
+    newItem.className = 'cart-item';
+    newItem.innerHTML = `
+        <img src="${itemImage}" alt="${itemName}">
+        <div class="item-details">
+            <p>${itemName}</p>
+            <h5>$${itemPrice.toFixed(2)}</h5>
+        </div>
+    `;
+
+    // Adicionar o item ao carrinho
+    cartItemsContainer.appendChild(newItem);
+}

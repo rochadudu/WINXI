@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="carrinho.css">
+    <title>Carrinho de Compras</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>WINIX</h1>
+        </div><!--logo-->
+
+        <div class="cabeçalho-link">
+            <li>
+                <a href="#">Inicio</a>
+            </li>
+            <li>
+                <a href="#">Destaque</a>
+            </li>
+            <li>
+                <a href="carrinho.html">Novo</a>
+            </li>
+            <li>
+                <a href="#">Contato</a>
+            </li>
+        </div><!--cabeçalho-link-->
+        <div class="icon"><span><ion-icon name="bag-outline"></ion-icon></span></div><!--icon-->
+    </header>
+    <div class="container">
+        <h1>Loja Online</h1>
+        
+        <!-- Botão para adicionar item ao carrinho -->
+        <button class="add-to-cart-btn" onclick="addToCart('Produto 1', 19.99)">Adicionar ao Carrinho</button>
+        
+        <!-- Lista de itens no carrinho -->
+        <div class="cart">
+            <h2>Carrinho de Compras</h2>
+            <ul id="cart-items">
+                <!-- Os itens serão adicionados aqui dinamicamente -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="carrinho.js"></script>
+</body>
+</html>
